@@ -86,8 +86,8 @@ DATABASES = {
     }
 }
 
-DATABASES["default"] = dj_database_url.parse(
-    "postgres://lizadb_user:Le67FCGJSJptSbq6jk6kHPDQ1cQADWlY@dpg-cjeje2ee546c73ct81j0-a.oregon-postgres.render.com/lizadb")
+# DATABASES["default"] = dj_database_url.parse(
+#     "postgres://lizadb_user:Le67FCGJSJptSbq6jk6kHPDQ1cQADWlY@dpg-cjeje2ee546c73ct81j0-a.oregon-postgres.render.com/lizadb")
 
 # postgres://lizadb_user:Le67FCGJSJptSbq6jk6kHPDQ1cQADWlY@dpg-cjeje2ee546c73ct81j0-a.oregon-postgres.render.com/lizadb
 
