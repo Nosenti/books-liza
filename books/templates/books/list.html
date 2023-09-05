@@ -1,13 +1,17 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
 <form method="get">
   <input type="text" name="search" placeholder="Search for books..." />
   <input type="submit" value="Search" />
 </form>
+
 {% for book in books %} {% if book.is_on_sale %}
 <h2>{{ book.title }}</h2>
 <p>Author: {{ book.author }}</p>
-{% if book.is_on_sale %}
-<p>Original Price: ${{ book.price }}</p>
-<p><strong>Sale Price: ${{ book.discounted_price }}</strong></p>
-{% endif %} {% endif %} {% endfor %}
+<p>Original Price: ${{ book.price|floatformat:2 }}</p>
+<p>Discount: {{ book.discount_percentage|floatformat:0 }}%</p>
+<!-- Display discount percentage -->
+<p><strong>Sale Price: ${{ book.discounted_price|floatformat:2 }}</strong></p>
+<!-- Adjust the sale price to two decimal places -->
+{% endif %} {% endfor %}
