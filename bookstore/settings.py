@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-kk*idvjvi63n#*w@2r$amp!!gb20@tvwd9^%^vevkw_z$9qt+c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bookstore-liza-29267d14effc.herokuapp.com',
+ALLOWED_HOSTS = ['lisa-bookstore-fc92e800bfba.herokuapp.com',
                  'localhost', '127.0.0.1']
 
 
