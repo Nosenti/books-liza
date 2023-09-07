@@ -1,1 +1,2 @@
-web: bookstore.wsgi
+web: python manage.py collectstatic --noinput; gunicorn bookstore.wsgi
+
